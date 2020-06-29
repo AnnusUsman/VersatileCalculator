@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <table  class="table">
+            <tr>
+                <td colspan="4"><span class="calc">Calculator</span></td>
+            </tr>
+            <tr>
+                <td colspan="4" size="5" onclick="calc()"><input class="input" id="input" type="text" name="input" disabled /></td>
+            </tr>
+            <tr class="cell">
+                <td id="negative" colspan="2" class="clear" onclick="clr()">C</td>
+                
+                <td onclick="calc('-')">+/-</td>
+                <td onclick="calc('/')">/ &nbsp;</td>
+            </tr>
+            <tr class="cell">
+                <td onclick="calc('7')">7</td>
+                <td onclick="calc('8')">8</td>
+                <td onclick="calc('9')">9</td>
+                <td onclick="calc('*')">x</td>
+            </tr>
+            <tr class="cell">
+                <td onclick="calc('4')">4</td>
+                <td onclick="calc('5')">5</td>
+                <td onclick="calc('6')">6</td>
+                <td onclick="calc('-')">-</td>
+            </tr>
+            <tr class="cell">
+                <td onclick="calc('1')">1</td>
+                <td onclick="calc('2')">2</td>
+                <td onclick="calc('3')">3</td>
+                <td onclick="calc('+')">+</td>
+            </tr>
+            <tr class="cell">
+                <td onclick="calc('%')">%</td>
+                <td onclick="calc('0')">0</td>
+                <td onclick="calc('.')">.</td>
+                <td id = "result" onclick="result()">=</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
